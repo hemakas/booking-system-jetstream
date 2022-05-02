@@ -19,7 +19,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('/calendar', function () {
-    return Inertia::render('calendar');
+    return Inertia::render('CalendarPage');
 })->name('calendar');
 
 // all test tasks
