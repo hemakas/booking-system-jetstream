@@ -4735,7 +4735,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
-/* harmony import */ var _Jetstream_Welcome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Jetstream/Welcome */ "./resources/js/Jetstream/Welcome.vue");
+Object(function webpackMissingModule() { var e = new Error("Cannot find module '@/Components/ViewBookings'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 //
 //
 //
@@ -4759,7 +4759,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
     AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
-    Welcome: _Jetstream_Welcome__WEBPACK_IMPORTED_MODULE_1__["default"]
+    ViewBookings: Object(function webpackMissingModule() { var e = new Error("Cannot find module '@/Components/ViewBookings'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
   }
 });
 
@@ -37489,7 +37489,7 @@ var render = function () {
           _c(
             "div",
             { staticClass: "bg-white overflow-hidden shadow-xl sm:rounded-lg" },
-            [_c("welcome")],
+            [_c("view-bookings")],
             1
           ),
         ]),
