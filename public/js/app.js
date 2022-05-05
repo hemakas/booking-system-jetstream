@@ -2337,6 +2337,154 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/ViewBookings.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/ViewBookings.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// import Pagination from '../Jetstream/pagination';
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {// Pagination
+  },
+  props: {
+    bookings: object
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Jetstream/ActionMessage.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Jetstream/ActionMessage.vue?vue&type=script&lang=js& ***!
@@ -4735,7 +4883,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
-Object(function webpackMissingModule() { var e = new Error("Cannot find module '@/Components/ViewBookings'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _Components_ViewBookings__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Components/ViewBookings */ "./resources/js/Components/ViewBookings.vue");
 //
 //
 //
@@ -4759,7 +4907,7 @@ Object(function webpackMissingModule() { var e = new Error("Cannot find module '
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
     AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
-    ViewBookings: Object(function webpackMissingModule() { var e = new Error("Cannot find module '@/Components/ViewBookings'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+    ViewBookings: _Components_ViewBookings__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
 
@@ -28909,6 +29057,45 @@ component.options.__file = "resources/js/Components/Calendar.vue"
 
 /***/ }),
 
+/***/ "./resources/js/Components/ViewBookings.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/Components/ViewBookings.vue ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _ViewBookings_vue_vue_type_template_id_e7841d6c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ViewBookings.vue?vue&type=template&id=e7841d6c& */ "./resources/js/Components/ViewBookings.vue?vue&type=template&id=e7841d6c&");
+/* harmony import */ var _ViewBookings_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ViewBookings.vue?vue&type=script&lang=js& */ "./resources/js/Components/ViewBookings.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ViewBookings_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ViewBookings_vue_vue_type_template_id_e7841d6c___WEBPACK_IMPORTED_MODULE_0__.render,
+  _ViewBookings_vue_vue_type_template_id_e7841d6c___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Components/ViewBookings.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/Jetstream/ActionMessage.vue":
 /*!**************************************************!*\
   !*** ./resources/js/Jetstream/ActionMessage.vue ***!
@@ -30865,6 +31052,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Components/ViewBookings.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/Components/ViewBookings.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewBookings_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ViewBookings.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/ViewBookings.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewBookings_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/Jetstream/ActionMessage.vue?vue&type=script&lang=js&":
 /*!***************************************************************************!*\
   !*** ./resources/js/Jetstream/ActionMessage.vue?vue&type=script&lang=js& ***!
@@ -31595,6 +31798,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_template_id_8211ccee___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_template_id_8211ccee___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Calendar.vue?vue&type=template&id=8211ccee& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/Calendar.vue?vue&type=template&id=8211ccee&");
+
+
+/***/ }),
+
+/***/ "./resources/js/Components/ViewBookings.vue?vue&type=template&id=e7841d6c&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/Components/ViewBookings.vue?vue&type=template&id=e7841d6c& ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewBookings_vue_vue_type_template_id_e7841d6c___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewBookings_vue_vue_type_template_id_e7841d6c___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ViewBookings_vue_vue_type_template_id_e7841d6c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ViewBookings.vue?vue&type=template&id=e7841d6c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/ViewBookings.vue?vue&type=template&id=e7841d6c&");
 
 
 /***/ }),
@@ -32803,6 +33023,503 @@ var render = function () {
     ],
     1
   )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/ViewBookings.vue?vue&type=template&id=e7841d6c&":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Components/ViewBookings.vue?vue&type=template&id=e7841d6c& ***!
+  \************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("v-app", [
+    _c("div", { staticClass: "flex flex-col" }, [
+      _c("div", { staticClass: "overflow-x-auto sm:-mx-6 lg:-mx-8" }, [
+        _c(
+          "div",
+          { staticClass: "py-4 inline-block min-w-full sm:px-6 lg:px-8" },
+          [
+            _c("div", { staticClass: "overflow-hidden" }, [
+              _c("table", { staticClass: "min-w-full text-center" }, [
+                _c("thead", { staticClass: "border-b bg-gray-50" }, [
+                  _c("tr", [
+                    _c(
+                      "th",
+                      {
+                        staticClass:
+                          "text-sm font-medium text-gray-900 px-6 py-4",
+                        attrs: { scope: "col" },
+                      },
+                      [_vm._v("\n                  #\n                ")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "th",
+                      {
+                        staticClass:
+                          "text-sm font-medium text-gray-900 px-6 py-4",
+                        attrs: { scope: "col" },
+                      },
+                      [
+                        _vm._v(
+                          "\n                  Client Name\n                "
+                        ),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "th",
+                      {
+                        staticClass:
+                          "text-sm font-medium text-gray-900 px-6 py-4",
+                        attrs: { scope: "col" },
+                      },
+                      [
+                        _vm._v(
+                          "\n                  Client's Phone\n                "
+                        ),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "th",
+                      {
+                        staticClass:
+                          "text-sm font-medium text-gray-900 px-6 py-4",
+                        attrs: { scope: "col" },
+                      },
+                      [
+                        _vm._v(
+                          "\n                  Client's Email\n                "
+                        ),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "th",
+                      {
+                        staticClass:
+                          "text-sm font-medium text-gray-900 px-6 py-4",
+                        attrs: { scope: "col" },
+                      },
+                      [_vm._v("\n                  Check In\n                ")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "th",
+                      {
+                        staticClass:
+                          "text-sm font-medium text-gray-900 px-6 py-4",
+                        attrs: { scope: "col" },
+                      },
+                      [
+                        _vm._v(
+                          "\n                  Check Out\n                "
+                        ),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "th",
+                      {
+                        staticClass:
+                          "text-sm font-medium text-gray-900 px-6 py-4",
+                        attrs: { scope: "col" },
+                      },
+                      [_vm._v("\n                  Channel\n                ")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "th",
+                      {
+                        staticClass:
+                          "text-sm font-medium text-gray-900 px-6 py-4",
+                        attrs: { scope: "col" },
+                      },
+                      [_vm._v("\n                  Room\n                ")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "th",
+                      {
+                        staticClass:
+                          "text-sm font-medium text-gray-900 px-6 py-4",
+                        attrs: { scope: "col" },
+                      },
+                      [
+                        _vm._v(
+                          "\n                  Rate Plan\n                "
+                        ),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "th",
+                      {
+                        staticClass:
+                          "text-sm font-medium text-gray-900 px-6 py-4",
+                        attrs: { scope: "col" },
+                      },
+                      [
+                        _vm._v(
+                          "\n                  No. of Rooms\n                "
+                        ),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "th",
+                      {
+                        staticClass:
+                          "text-sm font-medium text-gray-900 px-6 py-4",
+                        attrs: { scope: "col" },
+                      },
+                      [
+                        _vm._v(
+                          "\n                  No. of Adults\n                "
+                        ),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "th",
+                      {
+                        staticClass:
+                          "text-sm font-medium text-gray-900 px-6 py-4",
+                        attrs: { scope: "col" },
+                      },
+                      [
+                        _vm._v(
+                          "\n                  No. of Children\n                "
+                        ),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "th",
+                      {
+                        staticClass:
+                          "text-sm font-medium text-gray-900 px-6 py-4",
+                        attrs: { scope: "col" },
+                      },
+                      [
+                        _vm._v(
+                          "\n                  Booking Date\n                "
+                        ),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "th",
+                      {
+                        staticClass:
+                          "text-sm font-medium text-gray-900 px-6 py-4",
+                        attrs: { scope: "col" },
+                      },
+                      [
+                        _vm._v(
+                          "\n                  Total Amount\n                "
+                        ),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "th",
+                      {
+                        staticClass:
+                          "text-sm font-medium text-gray-900 px-6 py-4",
+                        attrs: { scope: "col" },
+                      },
+                      [_vm._v("\n                  Comment\n                ")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "th",
+                      {
+                        staticClass:
+                          "text-sm font-medium text-gray-900 px-6 py-4",
+                        attrs: { scope: "col" },
+                      },
+                      [_vm._v("\n                  Action\n                ")]
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.bookings.data, function (booking) {
+                    return _c(
+                      "tr",
+                      { key: booking.id, staticClass: "bg-white border-b" },
+                      [
+                        _c(
+                          "td",
+                          {
+                            staticClass:
+                              "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900",
+                          },
+                          [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(booking.id) +
+                                "\n                "
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass:
+                              "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900",
+                          },
+                          [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(booking.first_name) +
+                                " " +
+                                _vm._s(booking.last_name) +
+                                "\n                "
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass:
+                              "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900",
+                          },
+                          [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(booking.contact_mobile) +
+                                "\n                "
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass:
+                              "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900",
+                          },
+                          [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(booking.contact_email) +
+                                "\n                "
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass:
+                              "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900",
+                          },
+                          [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(booking.check_in) +
+                                "\n                "
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass:
+                              "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900",
+                          },
+                          [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(booking.check_out) +
+                                "\n                "
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass:
+                              "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900",
+                          },
+                          [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(booking.channel.name) +
+                                "\n                "
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass:
+                              "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900",
+                          },
+                          [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(booking.room.name) +
+                                "\n                "
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass:
+                              "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900",
+                          },
+                          [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(booking.ratePlan.name) +
+                                "\n                "
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass:
+                              "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900",
+                          },
+                          [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(booking.no_of_rooms) +
+                                "\n                "
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass:
+                              "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900",
+                          },
+                          [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(booking.no_of_adults) +
+                                "\n                "
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass:
+                              "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900",
+                          },
+                          [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(booking.no_of_children) +
+                                "\n                "
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass:
+                              "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900",
+                          },
+                          [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(booking.booking_date) +
+                                "\n                "
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass:
+                              "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900",
+                          },
+                          [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(booking.total_amount) +
+                                "\n                "
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass:
+                              "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900",
+                          },
+                          [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(booking.comment) +
+                                "\n                "
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass:
+                              "px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900",
+                          },
+                          [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(booking.comment) +
+                                "\n                "
+                            ),
+                          ]
+                        ),
+                      ]
+                    )
+                  }),
+                  0
+                ),
+              ]),
+            ]),
+          ]
+        ),
+      ]),
+    ]),
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true

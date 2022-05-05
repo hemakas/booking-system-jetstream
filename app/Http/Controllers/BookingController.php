@@ -13,9 +13,24 @@ class BookingController extends Controller
     {
         $bookings = Booking::orderBy('created_at', 'DESC')->paginate(5);
 
-        // return view('pages.bookings.index', 
-        // [
-        //     'bookings' => $bookings
+        // return Inertia::render('Bookings/Index', [
+        //     'bookings' => $bookings->map(function($booking) {
+        //         return [
+        //             'id' => $booking->id,
+        //             'first_name' => $booking->first_name,
+        //             'last_name' => $booking->last_name,
+        //             'contact_mobile' => $booking->contact_mobile,
+        //             'contact_email' => $booking->contact_email,
+        //             'check_in' => $booking->check_in,
+        //             'check_out' => $booking->check_out,
+        //             'booking_date' => $booking->booking_date,
+        //             'no_of_rooms' => $booking->no_of_rooms,
+        //             'no_of_adults' => $booking->no_of_adults,
+        //             'no_of_children' => $booking->no_of_children,
+        //             'total_amount' => $booking->total_amount,
+        //             'comment' => $booking->comment
+        //         ];
+        //     })
         // ]);
 
         return Inertia::render('Bookings/Index', [

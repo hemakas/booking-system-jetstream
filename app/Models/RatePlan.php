@@ -12,4 +12,9 @@ class RatePlan extends Model
     protected $fillable = [
         'name'
     ];
+
+    public function booking()
+    {
+        return $this->hasMany(Booking::class);
+    }
 }
