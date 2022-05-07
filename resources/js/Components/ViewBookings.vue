@@ -61,9 +61,9 @@
               <tbody>
                 
                 <!-- table data -->
-                <tr v-for="booking in bookings.data" :key="booking.id" class="bg-white border-b">
+                <tr v-for="(booking, index) in bookings" :key="booking.id" class="bg-white border-b">
                   <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                    {{ booking.id }}
+                    {{ index }}  {{ booking.id }}
                   </td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                     {{ booking.first_name }} {{ booking.last_name }}
@@ -135,7 +135,7 @@ export default {
   },
 
   props: {
-    bookings: object,
+    bookings: Object,
   }
 
   }

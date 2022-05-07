@@ -33,5 +33,10 @@ Route::get('/calendar', function () {
 // all booking routes
 Route::get('/bookings', [BookingController::class, 'index'])->name('bookings');
 
+// all channel routes
+Route::get('/channels', [ChannelController::class, 'index'])->name('channels');
+Route::get('/channels/{channel}/edit', [ChannelController::class, 'edit'])->name('channels.edit');
+Route::put('/channels/{channel}', [ChannelController::class, 'update'])->name('channels.update');
+
 // all test tasks
 Route::get('/gettasks', [TaskController::class, 'index']);
