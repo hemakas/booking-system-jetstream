@@ -41,5 +41,13 @@ Route::get('/channels/{channel}/edit', [ChannelController::class, 'edit'])->name
 Route::put('/channels/{channel}', [ChannelController::class, 'update'])->name('channels.update');
 Route::delete('/channels/{channel}', [ChannelController::class, 'destroy'])->name('channels.destroy');
 
+// all rate plan routes
+Route::get('/ratePlans', [RatePlanController::class, 'index'])->name('ratePlans');
+Route::get('/ratePlans/create', [RatePlanController::class, 'create'])->name('ratePlans.create');
+Route::put('/ratePlans/store', [RatePlanController::class, 'store'])->name('ratePlans.store');
+Route::get('/ratePlans/{ratePlan}/edit', [RatePlanController::class, 'edit'])->name('ratePlans.edit');
+Route::put('/ratePlans/{ratePlan}', [RatePlanController::class, 'update'])->name('ratePlans.update');
+Route::delete('/ratePlans/{ratePlan}', [RatePlanController::class, 'destroy'])->name('ratePlans.destroy');
+
 // all test tasks
 Route::get('/gettasks', [TaskController::class, 'index']);

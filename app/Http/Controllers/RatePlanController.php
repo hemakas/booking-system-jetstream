@@ -3,82 +3,71 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\RatePlan;
+use Inertia\Inertia;
 
 class RatePlanController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
+    // show all rate plans
     public function index()
     {
-        //
+        $ratePlans = RatePlan::all();
+        
+        return Inertia::render('RatePlans/Index', [
+            'ratePlans' => $ratePlans
+        ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    // render rate plan create page
     public function create()
     {
-        //
+        return Inertia::render('RatePlans/Create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    // store new rate plan
     public function store(Request $request)
     {
-        //
+        RatePlan::create([
+            'name' => $request->rateplanName,
+        ]);
+
+        return redirect()->route('ratePlans');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    // edit a Rate Plan
     public function edit($id)
     {
-        //
+        
+        $ratePlan = RatePlan::find($id);
+        
+        return Inertia::render('RatePlans/Edit', [
+            'ratePlan' => $ratePlan
+        ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    // update rate plan
     public function update(Request $request, $id)
     {
-        //
+        $rateplan = RatePlan::find($id);
+        
+        $rateplan->name = $request->ratePlanName;
+
+        $rateplan->update();
+
+        return redirect()->route('ratePlans');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    // delete rate plan
     public function destroy($id)
     {
-        //
+        RatePlan::destroy($id);
+
+        return redirect()->route('ratePlans');
     }
 }

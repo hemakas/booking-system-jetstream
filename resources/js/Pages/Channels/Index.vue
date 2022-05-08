@@ -24,7 +24,7 @@
 
 <script>
     import AppLayout from '@/Layouts/AppLayout'
-    import ViewChannels from '@/Components/ViewChannels'
+    import ViewChannels from '@/Components/Channels/ViewChannels'
 
     export default {
         components: {
@@ -33,7 +33,7 @@
         },
 
         props: {
-            channels: Object,
+            channels: Array,
         }
     }
 </script>

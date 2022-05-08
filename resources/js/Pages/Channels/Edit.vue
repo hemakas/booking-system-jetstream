@@ -18,7 +18,7 @@
 
 <script>
     import AppLayout from '@/Layouts/AppLayout'
-    import EditChannel from '@/Components/EditChannel'
+    import EditChannel from '@/Components/Channels/EditChannel'
 
     export default {
         components: {
@@ -27,7 +27,7 @@
         },
 
         props: {
-            channel: Object,
+            channel: Array,
         }
     }
 </script>
