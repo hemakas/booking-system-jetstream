@@ -49,5 +49,13 @@ Route::get('/ratePlans/{ratePlan}/edit', [RatePlanController::class, 'edit'])->n
 Route::put('/ratePlans/{ratePlan}', [RatePlanController::class, 'update'])->name('ratePlans.update');
 Route::delete('/ratePlans/{ratePlan}', [RatePlanController::class, 'destroy'])->name('ratePlans.destroy');
 
+// all room routes
+Route::get('/rooms', [RoomController::class, 'index'])->name('rooms');
+Route::get('/rooms/create', [RoomController::class, 'create'])->name('rooms.create');
+Route::put('/rooms/store', [RoomController::class, 'store'])->name('rooms.store');
+Route::get('/rooms/{room}/edit', [RoomController::class, 'edit'])->name('rooms.edit');
+Route::put('/rooms/{room}', [RoomController::class, 'update'])->name('rooms.update');
+Route::delete('/rooms/{room}', [RoomController::class, 'destroy'])->name('rooms.destroy');
+
 // all test tasks
 Route::get('/gettasks', [TaskController::class, 'index']);
