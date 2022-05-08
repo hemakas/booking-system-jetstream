@@ -35,8 +35,11 @@ Route::get('/bookings', [BookingController::class, 'index'])->name('bookings');
 
 // all channel routes
 Route::get('/channels', [ChannelController::class, 'index'])->name('channels');
+Route::get('/channels/create', [ChannelController::class, 'create'])->name('channels.create');
+Route::put('/channels/store', [ChannelController::class, 'store'])->name('channels.store');
 Route::get('/channels/{channel}/edit', [ChannelController::class, 'edit'])->name('channels.edit');
 Route::put('/channels/{channel}', [ChannelController::class, 'update'])->name('channels.update');
+Route::delete('/channels/{channel}', [ChannelController::class, 'destroy'])->name('channels.destroy');
 
 // all test tasks
 Route::get('/gettasks', [TaskController::class, 'index']);

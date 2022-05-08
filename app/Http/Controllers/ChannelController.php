@@ -9,6 +9,7 @@ use Inertia\Inertia;
 class ChannelController extends Controller
 {
 
+    // show all channels
     public function index()
     {
         $channels = Channel::all();
@@ -18,14 +19,20 @@ class ChannelController extends Controller
         ]);
     }
 
+    // render channel create page
     public function create()
     {
-        //
+        return Inertia::render('Channels/Create');
     }
 
+    // store new channel
     public function store(Request $request)
     {
-        //
+        Channel::create([
+            'name' => $request->channelName,
+        ]);
+
+        return redirect()->route('channels');
     }
 
     public function show($id)
@@ -33,6 +40,7 @@ class ChannelController extends Controller
         //
     }
 
+    // edit a channel
     public function edit($id)
     {
         
@@ -43,6 +51,7 @@ class ChannelController extends Controller
         ]);
     }
 
+    // update a channel
     public function update(Request $request, $id)
     {
         $channel = Channel::find($id);
@@ -54,8 +63,12 @@ class ChannelController extends Controller
         return redirect()->route('channels');
     }
 
+    
+    // delete a channel
     public function destroy($id)
     {
-        //
+        Channel::destroy($id);
+
+        return redirect()->route('channels');
     }
 }
