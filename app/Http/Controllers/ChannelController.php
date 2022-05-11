@@ -28,6 +28,10 @@ class ChannelController extends Controller
     // store new channel
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'channelName' => 'required|string|max:150',
+        ]);
+
         Channel::create([
             'name' => $request->channelName,
         ]);
