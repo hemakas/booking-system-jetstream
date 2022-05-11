@@ -9,7 +9,10 @@
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                    <edit-rate-plan :ratePlan="ratePlan" />
+                    <edit-rate-plan 
+                    :ratePlan="ratePlan"
+                    :errors="errors" 
+                    />
                 </div>
             </div>
         </div>
@@ -27,7 +30,8 @@
         },
 
         props: {
-            ratePlan: Array,
+            ratePlan: [],
+            errors: {},
         }
     }
 </script>

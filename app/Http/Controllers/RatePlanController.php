@@ -28,6 +28,10 @@ class RatePlanController extends Controller
     // store new rate plan
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'rateplanName' => 'required|string|max:150',
+        ]);
+        
         RatePlan::create([
             'name' => $request->rateplanName,
         ]);
@@ -54,6 +58,10 @@ class RatePlanController extends Controller
     // update rate plan
     public function update(Request $request, $id)
     {
+        $this->validate($request, [
+            'rateplanName' => 'required|string|max:150',
+        ]);
+        
         $rateplan = RatePlan::find($id);
         
         $rateplan->name = $request->ratePlanName;
