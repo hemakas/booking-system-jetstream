@@ -11,14 +11,10 @@ use App\Http\Controllers\ChannelController;
 use App\Http\Controllers\RatePlanController;
 use App\Http\Controllers\RoomController;
 
-Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
+// ===========================================
+
+// redirects welcome page to login page
+Route::redirect('/', '/login');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
