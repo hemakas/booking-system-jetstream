@@ -19,8 +19,8 @@
                   </th>
                 </tr>
               </thead>
-              <tbody>
-                
+              
+              <tbody>  
                 <!-- table data -->
                 <tr v-for="ratePlan in ratePlans" :key="ratePlan.id" class="bg-white border-b">
                   <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
@@ -33,7 +33,11 @@
                     <div class="flex items-center justify-center">
                       <div class="inline-flex" role="group">
                         <a :href="`ratePlans/${ratePlan.id}/edit`" class="text-green-500 hover:text-green-600 transition duration-300 ease-in-out mr-4">Edit</a>
-                        <a href="#!" class="text-red-600 hover:text-red-700 transition duration-300 ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</a>
+                        
+                        <form @submit.prevent="deleteRatePlan(ratePlan.id)">
+                          <button type="submit" class="text-red-600 hover:text-red-700 transition duration-300 ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button>
+                        </form>
+
                       </div>
                     </div>
                   </td>
@@ -50,11 +54,10 @@
                         <div class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
                           
                           <!-- confirm delete button  -->
-                          <form @submit.prevent="submit(ratePlan.id)">
+                          <form @submit.prevent="submit">
                             <button type="submit" class="inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out mr-3">Ok</button>
                           </form>
 
-                          
                           <!-- modal close button -->
                           <button type="button" class="inline-block px-6 py-2.5 bg-gray-200 text-gray-700 font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out" data-bs-dismiss="modal">Cancle</button>
                         </div>
@@ -88,15 +91,23 @@
 
     props: {
       ratePlans: {
-        type: Array,
+        type: [],
       },
     },
 
-    methods: {
-      submit(id) {
+    data() {
+      return {
+        deleteId: null
+      }
+    },
 
-        console.log(id)
-        this.$inertia.delete(`/ratePlans/${id}`)
+    methods: {
+      deleteRatePlan(id) {
+        this.deleteId = id
+      },
+      
+      submit() {
+        this.$inertia.delete(`/ratePlans/${this.deleteId}`)
         location.reload()
       },
     },

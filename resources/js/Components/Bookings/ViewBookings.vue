@@ -58,8 +58,8 @@
                   </th>
                 </tr>
               </thead>
+              
               <tbody>
-                
                 <!-- table data -->
                 <tr v-for="booking in bookings" :key="booking.id" class="bg-white border-b">
                   <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
@@ -141,9 +141,9 @@
                       </div>
                     </div>
                   </div>
-
                 </tr>
               </tbody>
+
             </table>
           </div>
 
@@ -182,7 +182,6 @@
       },
       
       submit() {
-        console.log(this.deleteId)
         this.$inertia.delete(`/bookings/${this.deleteId}`)
         location.reload()
       },

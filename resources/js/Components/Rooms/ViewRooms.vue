@@ -19,8 +19,8 @@
                   </th>
                 </tr>
               </thead>
+
               <tbody>
-                
                 <!-- table data -->
                 <tr v-for="room in rooms" :key="room.id" class="bg-white border-b">
                   <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
@@ -33,11 +33,11 @@
                     <div class="flex items-center justify-center">
                       <div class="inline-flex" role="group">
                         <a :href="`rooms/${room.id}/edit`" class="text-green-500 hover:text-green-600 transition duration-300 ease-in-out mr-4">Edit</a>
-                        <a href="#!" class="text-red-600 hover:text-red-700 transition duration-300 ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</a>
-                        <!-- <form @submit.prevent="deleteRec">
-                          <input type="text" v-model="form.roomId" id="roomName" name="roomName" class="invisible">
-                          <a href="#!" class="text-red-600 hover:text-red-700 transition duration-300 ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</a>
-                        </form> -->
+                        
+                        <form @submit.prevent="deleteRoom(room.id)">
+                          <button type="submit" class="text-red-600 hover:text-red-700 transition duration-300 ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button>
+                        </form>
+
                       </div>
                     </div>
                   </td>
@@ -67,10 +67,10 @@
                         </div>
                       </div>
                     </div>
-                  </div>  
-
+                  </div>
                 </tr>
-              </tbody>  
+              </tbody>
+
             </table>
           </div>
 
@@ -99,9 +99,19 @@
       rooms: Array,
     },
 
+    data() {
+      return {
+        deleteId: null
+      }
+    },
+
     methods: {
-      submit(id) {
-        this.$inertia.delete(`/rooms/${id}`)
+      deleteRoom(id) {
+        this.deleteId = id
+      },
+      
+      submit() {
+        this.$inertia.delete(`/rooms/${this.deleteId}`)
         location.reload()
       },
     },
