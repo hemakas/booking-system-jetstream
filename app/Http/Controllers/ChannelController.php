@@ -58,6 +58,10 @@ class ChannelController extends Controller
     // update a channel
     public function update(Request $request, $id)
     {
+        $this->validate($request, [
+            'channelName' => 'required|string|max:150',
+        ]);
+        
         $channel = Channel::find($id);
         
         $channel->name = $request->channelName;
