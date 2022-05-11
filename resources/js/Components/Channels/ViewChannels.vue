@@ -92,7 +92,6 @@
 
     methods: {
       submit(id) {
-
         console.log(id)
         this.$inertia.delete(`/channels/${id}`)
         location.reload()
