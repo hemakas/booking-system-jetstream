@@ -9,6 +9,12 @@ use Inertia\Inertia;
 class RatePlanController extends Controller
 {
     
+    // contructor
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }    
+    
     // show all rate plans
     public function index()
     {

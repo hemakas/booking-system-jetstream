@@ -8,6 +8,12 @@ use Inertia\Inertia;
 
 class CalendarController extends Controller
 {
+    // contructor
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     // fetch all bookings
     public function fetch()
     {

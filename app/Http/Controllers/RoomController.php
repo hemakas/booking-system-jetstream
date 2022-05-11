@@ -8,6 +8,12 @@ use Inertia\Inertia;
 
 class RoomController extends Controller
 {
+    // contructor
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+        
     // show all rooms
     public function index()
     {

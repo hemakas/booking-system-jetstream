@@ -12,6 +12,12 @@ use Inertia\Inertia;
 class BookingController extends Controller
 {
 
+    // contructor
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     // show all bookings
     public function index()
     {

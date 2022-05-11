@@ -9,6 +9,12 @@ use Inertia\Inertia;
 class ChannelController extends Controller
 {
 
+    // contructor
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+        
     // show all channels
     public function index()
     {
