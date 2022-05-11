@@ -27,6 +27,10 @@ class RoomController extends Controller
     // store new room
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'roomName' => 'required|string|max:150',
+        ]);
+        
         Room::create([
             'name' => $request->roomName,
         ]);
@@ -53,6 +57,10 @@ class RoomController extends Controller
     // update a room
     public function update(Request $request, $id)
     {
+        $this->validate($request, [
+            'roomName' => 'required|string|max:150',
+        ]);
+        
         $room = Room::find($id);
         
         $room->name = $request->roomName;
