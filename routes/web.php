@@ -16,9 +16,9 @@ use App\Http\Controllers\RoomController;
 // redirects welcome page to login page
 Route::redirect('/', '/login');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->get('/calendar', function () {
+    return Inertia::render('Calendar/Index');
+})->name('calendar');
 
 // calendar
 Route::get('/calendar', [CalendarController::class, 'fetch'])->name('calendar');
@@ -54,6 +54,3 @@ Route::put('/rooms/store', [RoomController::class, 'store'])->name('rooms.store'
 Route::get('/rooms/{room}/edit', [RoomController::class, 'edit'])->name('rooms.edit');
 Route::put('/rooms/{room}', [RoomController::class, 'update'])->name('rooms.update');
 Route::delete('/rooms/{room}', [RoomController::class, 'destroy'])->name('rooms.destroy');
-
-// all test tasks
-Route::get('/gettasks', [TaskController::class, 'index']);
