@@ -61,7 +61,6 @@
             v-model="focus"
             color="primary"
             :events="events"
-            :tasks="tasks"
             :event-color="getEventColor"
             :type="type"
             @click:event="showEvent"
@@ -137,13 +136,14 @@
       selectedElement: null,
       selectedOpen: false,
       events: [],
-      tasks: [],
-      taskNames: [],
       colors: ['blue', 'indigo', 'deep-purple', 'cyan', 'green', 'orange', 'grey darken-1'],
     }),
 
+    props: {
+      bookings: {}
+    },
+
     mounted () {
-      this.getTasks()
       this.$refs.calendar.checkChange()
     },
 
@@ -195,7 +195,7 @@
         const days = (max.getTime() - min.getTime()) / 86400000
         const eventCount = this.rnd(days, days + 20)
         
-        for (let i = 0; i < Object.keys(this.tasks).length; i++) {
+        for (let i = 0; i < Object.keys(this.bookings).length; i++) {
         
           const allDay = this.rnd(0, 3) === 0
           const firstTimestamp = this.rnd(min.getTime(), max.getTime())
@@ -203,11 +203,14 @@
           const secondTimestamp = this.rnd(2, allDay ? 288 : 8) * 900000
           const second = new Date(first.getTime() + secondTimestamp)
 
-          const startDt = new Date(Date.parse(this.tasks[i].created_at));
-          const endDt = new Date(Date.parse(this.tasks[i].updated_at));
-          
+          // const startDt = new Date(Date.parse(this.bookings[i].check_in));
+          // const endDt = new Date(Date.parse(this.bookings[i].check_out));
+
+          const startDt = this.bookings[i].check_in
+          const endDt = this.bookings[i].check_out
+
           events.push({ 
-            name: this.tasks[i].name,
+            name: this.bookings[i].room.name,
             start: startDt,
             end: endDt,
             color: this.colors[this.rnd(0, this.colors.length - 1)],
@@ -222,14 +225,6 @@
         return Math.floor((b - a + 1) * Math.random()) + a
       },
 
-      // get tasks from the database
-      getTasks () {
-        axios.get('/gettasks')
-        .then((response) => (
-          this.tasks = response.data,
-          console.log(response.data)
-        ));
-      },
     }, // end of methods
   }
 </script>   
