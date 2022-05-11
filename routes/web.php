@@ -8,6 +8,7 @@ use Inertia\Inertia;
 use App\Http\Controllers\TaskController;
 
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\CalendarController;
 use App\Http\Controllers\ChannelController;
 use App\Http\Controllers\RatePlanController;
 use App\Http\Controllers\RoomController;
@@ -26,9 +27,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 // calendar
-Route::get('/calendar', function () {
-    return Inertia::render('CalendarPage');
-})->name('calendar');
+Route::get('/calendar', [CalendarController::class, 'fetch'])->name('calendar');
 
 // all booking routes
 Route::get('/bookings', [BookingController::class, 'index'])->name('bookings');
