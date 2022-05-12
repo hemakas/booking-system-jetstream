@@ -49,8 +49,10 @@
                     <label for="noOfRooms" class="form-label inline-block mt-1.5 text-gray-700">No. of Rooms</label>
                 </div>
                 <div class="form-group mb-6">
-                    <input type="number" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
-                    v-model="form.noOfRooms" id="noOfRooms" aria-describedby="No of Rooms" placeholder="No. of Rooms">
+                    <select class="form-select appearance-none block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Rate plan"
+                    v-model="form.noOfRooms" name="noOfRooms" id="noOfRooms">
+                        <option  v-for="n in 11" :value="n">{{ n }} Room(s)</option>
+                    </select>
                     <!-- error -->
                     <p v-if="errors.noOfRooms" class="text-red-500 text-xs italic mt-3">{{ errors.noOfRooms }}</p>
                 </div>
