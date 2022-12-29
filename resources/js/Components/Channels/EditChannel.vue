@@ -49,6 +49,11 @@
     }
 </script>
 
-<style>
+<style lang="sss" scoped>
 
+
+[role=button], [type=button], [type=reset], [type=submit], button {
+    cursor: pointer;
+    color: red;
+}
 </style>
